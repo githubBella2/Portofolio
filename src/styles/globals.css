@@ -1,8 +1,35 @@
 @import "tailwindcss";
 
+/* :root {
+  --background: #FAC9B8;
+  --foreground: #2F243A;
+
+  --sand: #FAC9B8;
+  --khaki: #DB8A74;
+  --taupe: #BEBBBB;
+  --sage: #444054;
+  --moss: #2F243A;
+
+  --clay: #C07A6A;
+  --header: #D8A08E;
+  --gold: #FFD36A;
+
+} */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F3E9DC;
+  --foreground: #5E3023;
+
+  --sand: #F3E9DC;
+  --khaki: #DAB49D;
+  --taupe: #C08552;
+  --sage: #895737;
+  --moss: #5E3023;
+
+  --clay: #C08552;
+  --header: #DAB49D;
+  --gold: #C08552;
+  --gold2: #C08552;
 }
 
 @theme inline {
@@ -10,6 +37,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-header: var(--header);
+  --color-sand: var(--sand);
+  --color-khaki: var(--khaki);
+  --color-taupe: var(--taupe);
+  --color-sage: var(--sage);
+  --color-moss: var(--moss);
+  --color-gold: var(--gold);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +58,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  .section-label {
+    color: #444054;
+  }
+
+  .nav-link {
+    color: #2F243A;
+  }
+
+  .nav-link::after {
+    background-color: #444054;
+  }
 }
