@@ -97,7 +97,7 @@ export default function Hero({ lang }: HeroProps) {
       {/* IMAGE */}
       <div className="flex-1 flex justify-center md:justify-end">
         <img
-          src="/images/IMG_1522.jpg"
+          src="/images/IMG_1522.JPG"
           alt="Profile"
           className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-2xl shadow-lg border border-moss/20"
         />
